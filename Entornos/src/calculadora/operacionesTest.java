@@ -11,7 +11,11 @@ class operacionesTest {
 		operaciones calculator = new operaciones();
 		int a = 1;
 		int b = 5;
-		calculator.multiplicar(a, b);
+		int actual = calculator.multiplicar(a, b);
+		
+		int expected = 5;
+		
+		assertEquals(expected,actual);
 	}
 
 }
